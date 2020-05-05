@@ -1,0 +1,14 @@
+{
+  "hosting": {
+    "public": ".nuxt",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [ {
+      "source": "/",
+      "destination": "/dist/server/index.ssr.html"
+    } ]
+  }
+}
