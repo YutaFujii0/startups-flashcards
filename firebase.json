@@ -8,7 +8,7 @@
     ],
     "rewrites": [ {
       "source": "/",
-      "destination": "/dist/server/index.ssr.html"
+      "destination": "/dist/server/index.spa.html"
     } ]
   }
 }
