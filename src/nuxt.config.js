@@ -41,7 +41,16 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
+    '@nuxtjs/axios'
   ],
+
+  axios: {
+    proxy: true
+  },
+
+  proxy: {
+    '/sdb/': { target: 'https://startup-db.com/', pathRewrite: {'^/sdb/': ''} }
+  },
   /*
   ** Build configuration
   */

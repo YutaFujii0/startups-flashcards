@@ -32,8 +32,8 @@
           .catch((err) => {
             console.log("error caused:", err)
           })
-        const $ = await cheerio.load(html.data)
-        this.question = $('.p-btn__modal a').text()
+        // const $ = await cheerio.load(html.data)
+        // this.question = $('.p-btn__modal a').text()
       }
     }
   }
